@@ -22,7 +22,7 @@ public class TouchpointCRUDStateless implements TouchpointCRUDRemote,
 	private EntityManager em;
 
 	/*
-	 * UE ADD1: run CreateTouchoints in the non-ws client project with the @TransactionAttribute commented in - what happens?
+	 * UE ADD1: run CreateTouchpointsAccessingCRUD in the client project with the @TransactionAttribute commented in - what happens?
 	 */
 	@Override
 	//@TransactionAttribute(TransactionAttributeType.MANDATORY)
