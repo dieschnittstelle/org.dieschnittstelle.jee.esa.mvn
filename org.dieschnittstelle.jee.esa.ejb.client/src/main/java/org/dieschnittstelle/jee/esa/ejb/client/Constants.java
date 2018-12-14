@@ -76,12 +76,12 @@ public class Constants {
 				ProductType.PASTRY, 1080);
 		// PRODUCT_2.setId(2);
 
-		CAMPAIGN_1 = new Campaign();
+		CAMPAIGN_1 = new Campaign("Familienfrühstück");
 		// CAMPAIGN_1.setId(3);
 		CAMPAIGN_1.addBundle(new ProductBundle(PRODUCT_1, 5));
 		CAMPAIGN_1.addBundle(new ProductBundle(PRODUCT_2, 2));
 
-		CAMPAIGN_2 = new Campaign();
+		CAMPAIGN_2 = new Campaign("Kaffeerunde");
 		// CAMPAIGN_2.setId(4);
 		CAMPAIGN_2.addBundle(new ProductBundle(PRODUCT_2, 3));
 
