@@ -70,19 +70,15 @@ public class Constants {
 
 		PRODUCT_1 = new IndividualisedProductItem("Schrippe", ProductType.ROLL,
 				720);
-		// PRODUCT_1.setId(1);
 
 		PRODUCT_2 = new IndividualisedProductItem("Kirschplunder",
 				ProductType.PASTRY, 1080);
-		// PRODUCT_2.setId(2);
 
 		CAMPAIGN_1 = new Campaign("Familienfrühstück");
-		// CAMPAIGN_1.setId(3);
 		CAMPAIGN_1.addBundle(new ProductBundle(PRODUCT_1, 5));
 		CAMPAIGN_1.addBundle(new ProductBundle(PRODUCT_2, 2));
 
 		CAMPAIGN_2 = new Campaign("Kaffeerunde");
-		// CAMPAIGN_2.setId(4);
 		CAMPAIGN_2.addBundle(new ProductBundle(PRODUCT_2, 3));
 
         // use a shared address for the two customers
@@ -100,7 +96,7 @@ public class Constants {
 
 	// this method resets all ids that might have been assigned to the objects
 	// referred to the constants after successful server-side creation
-	// note that in order for this to work, ids must have int type and must not
+	// note that in order for this to work, ids must have int or long type and must not
 	// be defaulted to any value different from 0 (e.g. -1)
 	public static void resetEntities() {
 		TOUCHPOINT_1.setId(0);
